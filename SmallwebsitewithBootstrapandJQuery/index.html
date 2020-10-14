@@ -12,10 +12,8 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css ">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	
-
 <!-- hhtps://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css -->
 </head>
-
 
 
 <body>
@@ -26,7 +24,6 @@
     <p>Primer ejercicio web de la asignatura de DSA</p> 
   </div>
 
-
 	<div class="container">
 		<div class="section">
 
@@ -36,12 +33,13 @@
     		alert("Value: " + $("#test").val());
 
     		var nombredeentrada = $("#test").val();
+    		traerDatos(nombredeentrada);
     		});
     		});
 			
 			</script>
 			<p>Name: <input type="text" id="test"></p>
-			<button class="btn blue" onclick="traerDatos('jlopez')">Buscar</button>
+			<button class="btn blue" >Buscar</button>
 
 			<p>(Haga click encima de buscar para encontrar usuario)</p>
 
@@ -52,7 +50,7 @@
 	</div>
 
 
-	
+
    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

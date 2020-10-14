@@ -1,4 +1,3 @@
-console.log('correcto');
 
 //document.querySelector('#boton').addEventListener('click', function(){
 //	traerDatos();//aqui poner el nombre del textbox
@@ -6,10 +5,9 @@ console.log('correcto');
 
 function traerDatos(NombreDeInput)
 {
-
 	console.log('Dentro de la funcion');
 
-	let url = `https://api.github.com/users/${NombreDeInput}`;
+	let url = `https://api.github.com/users/${NombreDeInput}/repos`;
 
 	const api = new XMLHttpRequest();
 
@@ -30,12 +28,10 @@ function traerDatos(NombreDeInput)
 
 			for(let item of datos)
 			{
-				i++;
-				resultado.innerHTML +=`<li>${item.name} | ${item.blog} | ${item.followers} </li>`;
-
-				if(i>=1)
+				i++;	
+				resultado.innerHTML +=`<li>${item.name} &nbsp || &nbsp ${item.description} &nbsp || &nbsp ${item.stargazers_count} </li>`;
+				if(i>=200)
 				{
-
 					break;
 				}
 			}
