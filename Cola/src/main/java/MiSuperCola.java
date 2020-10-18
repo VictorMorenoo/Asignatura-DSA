@@ -1,5 +1,5 @@
 import java.util.Queue;
-
+/*
 public class MiSuperCola<E> implements Cola<E>
 {
     private E[] data;
@@ -41,3 +41,4 @@ public class MiSuperCola<E> implements Cola<E>
 
 
 }
+*/
