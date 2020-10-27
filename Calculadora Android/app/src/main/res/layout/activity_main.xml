@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="16dp"
+    android:backgroundTint="#184675"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TV_DIS_OP"
+        android:layout_width="331dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="26dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/TV_DIS_RE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TV_DIS_RE"
+        android:layout_width="331dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="49dp"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV_DIS_OP" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8C1515"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV_DIS_OP">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/B_OFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#CA0000"
+                android:onClick="Apagar"
+                android:text="OFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/B_BorrarUlt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF5722"
+                android:onClick="BorrarUltimo"
+                android:text="Delete"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/B_BorrarTodo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFC107"
+                android:onClick="BorrarTodo"
+                android:text="CLEAR"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/B_SEN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#838485"
+                android:onClick="Sin"
+                android:text="SIN"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/B_COS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#838485"
+                android:onClick="Cos"
+                android:text="COS"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/B_TAN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#838485"
+                android:onClick="Tan"
+                android:text="TAN"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/B_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#838485"
+                android:onClick="Siete"
+                android:text="7"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/B_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#838485"
+                android:onClick="Ocho"
+                android:text="8"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/B_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#838485"
+                android:onClick="Nueve"
+                android:text="9"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/B_DIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#838485"
+                android:onClick="Division"
+                android:text="/"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/B_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#838485"
+                android:onClick="Cuatro"
+                android:text="4"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/B_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#838485"
+                android:onClick="Cinco"
+                android:text="5"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/B_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#838485"
+                android:onClick="Seis"
+                android:text="6"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/B_MULT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#838485"
+                android:onClick="Multiplicacion"
+                android:text="X"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/B_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#838485"
+                android:onClick="Uno"
+                android:text="1"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/B_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#838485"
+                android:onClick="Dos"
+                android:text="2"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/B_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#838485"
+                android:onClick="Tres"
+                android:text="3"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/B_REST"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#838485"
+                android:onClick="Resta"
+                android:text="-"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/B_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#838485"
+                android:onClick="Cero"
+                android:text="0"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/B_COMA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#838485"
+                android:onClick="COMA"
+                android:text=","
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/B_IGUAL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#838485"
+                android:onClick="IGUALACION"
+                android:text="="
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/B_SUMA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#838485"
+                android:onClick="Suma"
+                android:text="+"
+                android:textSize="18sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
