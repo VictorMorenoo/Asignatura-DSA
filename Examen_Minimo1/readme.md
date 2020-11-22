@@ -1,1 +1,0 @@
-En dicho repositorio debe existir un fichero readme.md que describa el/los proyecto/s
