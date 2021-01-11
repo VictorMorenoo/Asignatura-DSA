@@ -15,14 +15,14 @@ import android.widget.Toast;
 
 import java.util.List;
 
-public class SplashActivity extends AppCompatActivity {
+public class InitialActivity extends AppCompatActivity {
     APIInterface APIInterface;
     EditText Uname;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash_screen);
+        setContentView(R.layout.activity_initial_screen);
         APIInterface = APIClient.getClient().create(APIInterface.class);
         Uname = (EditText) findViewById(R.id.UserInput);
     }
